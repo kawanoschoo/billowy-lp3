@@ -1,0 +1,833 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;600&display=swap");
+html {
+  font-size: 62.5%;
+  background-color: #fff;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+main {
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0px auto;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: 0.15rem;
+  line-height: 1.6;
+}
+
+p, li, dd {
+  font-size: 1.42rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #151515;
+  letter-spacing: 0.18rem;
+}
+
+span.example {
+  font-size: 0.55em;
+  vertical-align: top;
+  letter-spacing: 0;
+}
+
+p.example {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.ec-btn-sp {
+  text-align: center;
+  margin: 20px auto;
+}
+.ec-btn-sp a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto 30px;
+  padding: 5px 0;
+  background-color: #704a4a;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+.ec-btn-sp a p {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+}
+.ec-btn-sp a .img {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 3px 10px 0 0;
+  margin-right: 10px;
+}
+.ec-btn-sp a .img img {
+  width: 25px;
+}
+
+@media screen and (min-width: 481px) {
+  .sp-display {
+    display: none;
+  }
+  .pc-logo {
+    position: fixed;
+    top: 20px;
+    left: 25px;
+    width: 180px;
+    z-index: 1;
+  }
+  .sp-on {
+    display: none;
+  }
+  .ec-btn-pc {
+    position: fixed;
+    bottom: 0px;
+    right: 40px;
+    z-index: 1;
+  }
+  .ec-btn-pc a {
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto 30px;
+    color: #fff;
+    background-color: #bd607d;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .pc-container {
+    padding: 30px 0;
+  }
+  .pc-container .pc-inner {
+    width: 33%;
+    max-width: 600px;
+    min-width: 450px;
+    margin: auto;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    background: #fff;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 999px) and (min-width: 561px) {
+  .pc-container .pc-inner {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 481px) {
+  .pc-container .pc-inner img {
+    width: 100%;
+    display: block;
+  }
+  .pc-container .pc-inner img.pc_3 {
+    position: relative;
+  }
+  .pc-container .pc-inner .pc-cart {
+    position: relative;
+  }
+  .pc-container .pc-inner .pc-cart .cart-btn {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .pc-container .pc-inner .pc-cart .cart-btn img {
+    width: 70%;
+    margin: auto;
+  }
+  .pc-container .pc-inner .pc-cart .cart-btn1 {
+    bottom: 10%;
+  }
+  .pc-container .pc-inner .pc-cart .cart-btn2 {
+    bottom: 11%;
+  }
+  .pc-container .pc-inner .set-cart {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px -8px rgba(0, 0, 0, 0.35);
+    text-decoration: none;
+  }
+  .pc-container .pc-inner .set-cart .txt {
+    width: 55%;
+    text-align: left;
+  }
+  .pc-container .pc-inner .set-cart .txt p {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+  .pc-container .pc-inner .set-cart .txt h2 {
+    font-size: 1.6rem;
+    color: #1d1d1d;
+  }
+  .pc-container .pc-inner .set-cart .img {
+    width: 35%;
+    display: flex;
+  }
+  .pc-container .pc-inner .set-cart .img img {
+    width: 100%;
+  }
+  .pc-container .pc-inner .pc-refill {
+    width: 88%;
+    margin: auto;
+  }
+  .pc-container .pc-inner .pc-refill img {
+    width: 100%;
+  }
+  .pc-container .pc-inner .pc-sample {
+    width: 90%;
+    margin: 30px auto 15px;
+  }
+  .pc-container footer {
+    padding: 0 0 50px;
+  }
+  .pc-container footer .footer-nav {
+    width: 93%;
+    padding-top: 25px;
+  }
+  .pc-container footer .footer-nav li:last-of-type {
+    padding-right: 0;
+  }
+  .pc-container footer .footer-nav li a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pc-display {
+    display: none;
+  }
+  .pc-logo, .ec-btn-pc {
+    display: none;
+  }
+  .sp-on {
+    display: block;
+  }
+}
+.fade-in {
+  opacity: 0;
+  flex: 0 1 30%;
+  transform: translateY(10px);
+  transition: all 1.3s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logo_fadein {
+  background: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+}
+.logo_fadein p {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+  width: 20%;
+}
+@media screen and (max-width: 560px) {
+  .logo_fadein p {
+    width: 200px;
+  }
+}
+.logo_fadein p img {
+  width: 100%;
+}
+
+.sp-display .section {
+  margin: 28px auto;
+}
+.sp-display .section p.sub {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: "Zen Old Mincho", serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  color: #ae5e81;
+}
+.sp-display .section p.sub::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  width: 10em;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #444;
+  vertical-align: middle;
+}
+.sp-display .section h2.h2-grad {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.sp-display .section h2.h2-grad span {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  background-image: linear-gradient(135deg, #da9ab4 10%, #a684a6 100%);
+  background-repeat: no-repeat;
+  background-size: 96% 8px;
+  background-position: bottom;
+  color: #565656;
+}
+.sp-display .section h2 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+.sp-display header {
+  position: relative;
+}
+.sp-display header .header-img {
+  width: 100%;
+}
+.sp-display header .header-img img {
+  width: 100%;
+}
+.sp-display header .logo1 {
+  position: fixed;
+  top: 2vh;
+  left: 5vw;
+  width: 110px;
+  z-index: 1;
+  transition: 0.5s;
+}
+.sp-display header .logo1 img {
+  width: 100%;
+}
+.sp-display header .small {
+  width: 21.5vw;
+  transition: 0.5s;
+  top: 1.5vh;
+  left: 3vw;
+}
+.sp-display #section1 {
+  position: relative;
+  margin-bottom: 25px;
+}
+.sp-display #section1 h2 {
+  position: absolute;
+  right: 0vw;
+  top: 0vh;
+  width: 26vw;
+}
+.sp-display #section1 h2 img {
+  width: 100%;
+}
+.sp-display #section1 .img {
+  width: 95%;
+  padding-top: 42px;
+}
+.sp-display #section1 .img img {
+  width: 100%;
+}
+.sp-display #section1 .txt {
+  margin: 15px auto 0;
+}
+.sp-display #section1 .txt span.kome {
+  font-size: 2rem;
+  font-weight: 200;
+  display: block;
+  margin: 20px 0 15px;
+}
+.sp-display #section1 .txt span.success {
+  font-weight: 600;
+  color: #966577;
+}
+.sp-display .section2 {
+  padding: 6vh 0 4vh;
+  background-image: url(img/usr/freepage4/milk.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.sp-display .section2 .txt1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sp-display .section2 .txt1 span.mark {
+  margin: 0 2px;
+  padding: 0 7px;
+  background: #bc92a4;
+  color: #fff;
+}
+.sp-display .section2 .txt1 p {
+  font-size: 1.8rem;
+  font-family: "Zen Old Mincho", serif;
+}
+.sp-display .section2 .txt1 p.last {
+  font-size: 2.2rem;
+}
+.sp-display .section2 .img {
+  width: 72.5%;
+  margin: auto;
+}
+.sp-display .section2 .img img {
+  width: 100%;
+}
+.sp-display .section2 .txt2 {
+  text-align: center;
+}
+.sp-display .section2 .txt2 span.new {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 2.15rem;
+  font-family: "Zen Old Mincho", serif;
+  color: #ae5e81;
+}
+.sp-display .section2 .txt2 ul li {
+  font-size: 2rem;
+  line-height: 1.45;
+}
+.sp-display .section2 .txt2 ul li:first-of-type {
+  line-height: 1;
+}
+.sp-display .section2 .txt2 ul li:first-of-type img {
+  width: 80px;
+}
+.sp-display .section2 .txt2 ul li:nth-child(2) {
+  color: #ae5e81;
+  font-size: 2.5rem;
+  font-family: "Zen Old Mincho", serif;
+}
+.sp-display .section2 .txt2 ul li:nth-child(3) {
+  font-size: 1.3rem;
+  font-family: "Zen Old Mincho", serif;
+}
+.sp-display .section2 .txt2 ul li:last-of-type {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto 0;
+  padding: 1px 12px 3px 15px;
+  border: 1px solid gray;
+  font-size: 1.8rem;
+}
+.sp-display .section2 .txt2 ul li span {
+  font-size: 1.4rem;
+}
+.sp-display .section2 .cart-btn {
+  width: 80%;
+  margin: 15px auto 0;
+  display: block;
+}
+.sp-display .section2 .cart-btn img {
+  width: 100%;
+}
+.sp-display .section2 p.example {
+  width: 80%;
+  margin: auto;
+  text-align: right;
+}
+.sp-display #peptide {
+  background: #f1f1f1;
+  padding: 30px 0;
+}
+.sp-display #peptide .box {
+  width: 76%;
+  background: white;
+  margin: 0 auto;
+  padding: 8.5% 7%;
+}
+.sp-display #peptide .box:first-of-type {
+  margin-top: 20px;
+}
+.sp-display #peptide .box h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+  background: -webkit-linear-gradient(0deg, #ab4381, #c29b9b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sp-display #peptide .box .img img {
+  width: 100%;
+}
+.sp-display #peptide .box .txt {
+  margin: 15px auto;
+}
+.sp-display #peptide .box .txt ul {
+  width: 85%;
+  margin: 15px auto;
+  padding: 0.5em 0;
+  list-style-type: none;
+}
+.sp-display #peptide .box .txt ul li {
+  position: relative;
+  margin-bottom: 4px;
+  padding: 0.3em 0 0.3em 2em;
+  line-height: 1.5;
+  border-bottom: 1px solid #727272;
+}
+.sp-display #peptide .box .txt ul li::after, .sp-display #peptide .box .txt ul li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 11px;
+  height: 15px;
+  width: 2px;
+  background: #de5763;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.sp-display #peptide .box .txt ul li::after {
+  top: 14px;
+  left: 4px;
+  height: 8px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+.sp-display #peptide .box .txt p.example {
+  text-align: right;
+}
+.sp-display #peptide .box .point {
+  margin: 25px auto 0;
+  text-align: center;
+}
+.sp-display #peptide .box .point .img {
+  margin: 10px auto;
+}
+.sp-display #peptide .box .point .img img {
+  width: 100%;
+}
+.sp-display #peptide .box .point p.point1 {
+  line-height: 1.5;
+}
+.sp-display #peptide .box .point p.point1 span {
+  font-size: 1.6rem;
+}
+.sp-display #peptide .box .point p.point1 span.pink {
+  color: #976972;
+  font-weight: bold;
+}
+.sp-display #peptide .box .point p.point2 {
+  display: inline;
+  background: linear-gradient(transparent 10%, #fefcd5 10% 90%, transparent 90%);
+  padding: 6px 3px;
+  font-size: 1.7rem;
+  line-height: 2.2;
+}
+.sp-display #peptide .box .point p.osusume {
+  margin-top: 20px;
+}
+.sp-display #peptide .box .point .triangle {
+  width: 30px;
+  margin: 5px auto 0;
+}
+.sp-display #peptide .box .point .triangle img {
+  width: 100%;
+}
+.sp-display #peptide .box .seven {
+  margin: 15px auto 0;
+}
+.sp-display #peptide .box .seven h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.sp-display #peptide .box .seven p {
+  font-size: 1.1rem;
+}
+.sp-display #peptide .to-arrow {
+  width: 20px;
+  margin: -12px auto -24px;
+}
+.sp-display #peptide .to-arrow img {
+  width: 100%;
+}
+.sp-display #peptide .matome {
+  width: 90%;
+  margin: 15px auto 0;
+  text-align: center;
+}
+.sp-display #section3 .txt {
+  margin-top: 20px;
+}
+.sp-display #section3 .img {
+  margin-top: 10px;
+  text-align: center;
+}
+.sp-display #section3 .img img {
+  width: 100%;
+}
+.sp-display #section3 .arrow {
+  width: 65vw;
+  margin: 15px auto;
+}
+.sp-display #section3 .arrow img {
+  width: 100%;
+}
+.sp-display #section3 .expectations {
+  text-align: center;
+  border: 2px solid #eee3e3;
+  padding: 2%;
+  border-radius: 13px;
+}
+.sp-display #section3 .expectations p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.sp-display .arrow {
+  margin-top: 25px;
+  text-align: center;
+}
+.sp-display .arrow img {
+  width: 85%;
+}
+.sp-display #section4 {
+  margin-top: 35px;
+}
+.sp-display #section4 h2 {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.45rem;
+  font-weight: 200;
+  position: relative;
+  padding: 0.3em;
+  text-align: center;
+}
+.sp-display #section4 h2 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+.sp-display #section4 h2 span img {
+  width: 120px;
+  margin-right: 5px;
+}
+.sp-display #section4 .txt {
+  margin: 8px auto 3vh;
+  text-align: center;
+}
+.sp-display #section4 .txt span {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0px 4px;
+  color: #ae5e81;
+  letter-spacing: 0.1rem;
+}
+.sp-display #section4 ul .waku {
+  padding: 6% 2.5%;
+  border-radius: 15px;
+  background: #f6f6f6;
+}
+.sp-display #section4 ul .plus {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+}
+.sp-display #section4 ul .plus img {
+  width: 46px;
+}
+.sp-display #section4 ul li {
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  text-align: center;
+}
+.sp-display #section4 ul li h3.drop {
+  color: #273e67;
+}
+.sp-display #section4 ul li h3.cream {
+  color: #ae5e81;
+}
+.sp-display #section4 ul li .li-txt {
+  width: 100%;
+}
+.sp-display #section4 ul li .li-txt h3 {
+  margin-bottom: 5px;
+  font-family: "Zen Old Mincho", serif;
+  font-size: 2.7rem;
+  font-weight: 500;
+  line-height: 0.9;
+  white-space: nowrap;
+  letter-spacing: 0.1rem;
+}
+.sp-display #section4 ul li .li-txt h3 span {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.4rem;
+  color: #5a5a5a;
+}
+.sp-display #section4 ul li .li-txt p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+.sp-display #section4 ul li .img {
+  width: 60%;
+  margin: 18px auto 12px;
+}
+.sp-display #section4 ul li .img img {
+  width: 100%;
+  margin-left: 30px;
+}
+.sp-display #section4 ul .texture {
+  background: #f6f6f6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px auto 5px;
+  padding: 0 1.5%;
+  border-radius: 10px;
+}
+.sp-display #section4 ul .texture .texture-img {
+  width: 35%;
+}
+.sp-display #section4 ul .texture .texture-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.sp-display #section4 ul .texture .texture-txt {
+  width: 60%;
+}
+.sp-display #section4 ul .texture .texture-txt h4 {
+  font-size: 1.6rem;
+  color: #2b2b2b;
+}
+.sp-display #section4 ul .texture .texture-txt p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+.sp-display #set .uruoi-wrap img {
+  width: 100%;
+}
+.sp-display .set .set-cart {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto 0;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 15px -8px rgba(0, 0, 0, 0.35);
+  text-decoration: none;
+}
+.sp-display .set .set-cart .txt {
+  width: 62.5%;
+  text-align: left;
+}
+.sp-display .set .set-cart .txt p {
+  font-size: 1.35rem;
+  letter-spacing: 0.1rem;
+}
+.sp-display .set .set-cart .txt h2 {
+  font-size: 1.4rem;
+  color: #1d1d1d;
+}
+.sp-display .set .set-cart .img {
+  width: 33%;
+  display: flex;
+}
+.sp-display .set .set-cart .img img {
+  width: 100%;
+}
+.sp-display #section7 .refer-btn {
+  display: block;
+  width: 95%;
+  margin: 10px auto 0;
+}
+.sp-display #section7 .refer-btn img {
+  width: 100%;
+}
+.sp-display #section5, .sp-display #section6, .sp-display #section7 {
+  margin: 35px auto 0;
+}
+.sp-display #section5 .txt, .sp-display #section6 .txt, .sp-display #section7 .txt {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.sp-display #section5 .img, .sp-display #section6 .img, .sp-display #section7 .img {
+  text-align: center;
+  width: 100%;
+}
+.sp-display #section5 .img img, .sp-display #section6 .img img, .sp-display #section7 .img img {
+  width: 100%;
+}
+.sp-display #sample {
+  display: block;
+  margin-top: 30px;
+}
+.sp-display #sample .img-wrap {
+  width: 90%;
+  margin: auto;
+}
+.sp-display #sample .img-wrap img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0 50px;
+  background: #bd607d;
+}
+footer .footer-nav {
+  margin-bottom: 30px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0;
+}
+footer .footer-nav li {
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+}
+footer .footer-nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+footer small {
+  width: auto;
+  color: #fff;
+}/*# sourceMappingURL=index4.css.map */

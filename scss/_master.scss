@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700&display=swap');
+// font-family: 'Zen Old Mincho', serif;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+// font-family: 'Dancing Script', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+// font-family: 'Sofia', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;600&display=swap');
+// font-family: 'Noto Sans JP', sans-serif;
+
+$main_color: #ae5e81;
+$gray:#8e8e8e;
+
+//画面サイズ定義
+$breakpoints: (
+    'pc': 'screen and (min-width: 1000px)',
+    'tb': 'screen and (max-width: 999px) and (min-width: 561px)',
+    // 'sm': 'screen and (max-width: 600px)',
+    'sp': 'screen and (max-width: 560px)',
+) !default;
+//mediaクエリと結合
+@mixin mq($breakpoint){
+    @media #{map-get($breakpoints, $breakpoint)}{
+        @content;
+    }
+}
