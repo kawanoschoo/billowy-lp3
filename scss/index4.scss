@@ -36,7 +36,7 @@ span.example {
 }
 p.example {
     display: block;
-    font-size: 1rem;
+    font-size: .8rem;
     letter-spacing: 0.15rem;
 }
 @keyframes rotation {
@@ -434,14 +434,15 @@ p.example {
                         font-size: 1.3rem;
                         font-family: "Zen Old Mincho", serif;
                     }
-                    &:last-of-type {
-                        width: -moz-fit-content;
-                        width: fit-content;
-                        margin: 10px auto 0;
-                        padding: 1px 12px 3px 15px;
-                        border: 1px solid gray;
-                        font-size: 1.8rem;
-                    }
+                    // ★
+                    // &:last-of-type {
+                    //     width: -moz-fit-content;
+                    //     width: fit-content;
+                    //     margin: 10px auto 0;
+                    //     padding: 1px 12px 3px 15px;
+                    //     border: 1px solid gray;
+                    //     font-size: 1.8rem;
+                    // }
                     span {
                         font-size: 1.4rem;
                     }

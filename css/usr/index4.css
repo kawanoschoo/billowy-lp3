@@ -44,7 +44,7 @@ span.example {
 
 p.example {
   display: block;
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 0.15rem;
 }
 
@@ -330,7 +330,7 @@ p.example {
   position: fixed;
   top: 2vh;
   left: 5vw;
-  width: 110px;
+  width: 21.5vw;
   z-index: 1;
   transition: 0.5s;
 }
@@ -339,7 +339,7 @@ p.example {
 }
 .sp-display header .small {
   width: 21.5vw;
-  transition: 0.5s;
+  transition: 1s;
   top: 1.5vh;
   left: 3vw;
 }
@@ -434,14 +434,6 @@ p.example {
 .sp-display .section2 .txt2 ul li:nth-child(3) {
   font-size: 1.3rem;
   font-family: "Zen Old Mincho", serif;
-}
-.sp-display .section2 .txt2 ul li:last-of-type {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 10px auto 0;
-  padding: 1px 12px 3px 15px;
-  border: 1px solid gray;
-  font-size: 1.8rem;
 }
 .sp-display .section2 .txt2 ul li span {
   font-size: 1.4rem;
